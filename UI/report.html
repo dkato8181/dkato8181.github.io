@@ -27,8 +27,8 @@
     <div class="middle">
       <aside>
         <p>Report new</p>
-        <a href="">Red-flag</a> <br>
-        <a href="">Intervention</a> 
+        <button id="btnAddRedFlag">Red-flag</button> <br>
+        <button id="btnAddIntervention">Intervention</button> 
       </aside>
 
       <section>
@@ -52,7 +52,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <span class="intervention"> red-flag </span>
+                <span class="intervention"> intervention </span>
               </div>
             <hr>
             <section class="card-body">
@@ -88,7 +88,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <span class="intervention"> red-flag </span>
+                <span class="intervention"> intervention </span>
               </div>
             <hr>
             <section class="card-body">
@@ -106,10 +106,41 @@
           </div>
       </section>
     </div>
-      <footer>
-        footer
-      </footer>
+
+    <footer>
+       footer
+    </footer>
     
+    <div id="recordModal" class="modal">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <span class="record-type">new red-flag</span>
+        </div>
+
+        <div class="modal-body">
+
+          <textarea name="" id="" cols="30" rows="10" placeholder="tell us what you know"></textarea>
+          
+          <div class="modal-body-btns">
+            <button id="btnAddImage">add image</button>
+            <input class="hidden" id="inputImage" type="file" accept="image/*"/>
+            <button id="btnAddVideo">add video</button>
+            <input class="hidden" id="inputVideo" type="file" accept="video/*"/>
+            <button id="btnAddLocation">add location</button>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+            <div class="modal-footer-btns">
+                <button id="btnOk">Ok</button>
+                <button id="btnCancel">Cancel</button>
+              </div>
+        </div>
+        
+      </div>
+    </div>
     <script src="ireporter.js" async defer></script>
   </body>
 </html>

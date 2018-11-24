@@ -30,6 +30,12 @@ aside {
   display: inline-block;
   margin-left: 5%;
   vertical-align: top;
+
+}
+aside button {
+  /* color: #fff4e0; */
+  width: 60%;
+  
 }
 section {
   width: 40%;
@@ -131,4 +137,65 @@ footer {
 }
 .intervention {
   color: #f8b500;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+  position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+.modal-header {
+    background-color: #00adb5;
+    color: #fff4e0;
+    padding: 2%;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    font-size: 110%;
+    text-align: center;
+}
+.modal-body {
+  padding: 2%;
+}
+.modal-footer {
+  padding: 2%;
+  color: white;
+  margin-left: 5%;
+}
+.modal-body-btns button{
+  width: 15%;
+  font-size: 70%;
+  display: inline-block;
+}
+.modal-footer-btns button {
+  width: 20%;
+  font-size: 90%;
+  display: inline-block;
+  background-color: #f8b500;
+}
+.modal-body textarea {
+  width: 80%
+}
+.hidden {
+  display: none;
 }
