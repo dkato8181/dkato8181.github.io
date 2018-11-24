@@ -1,5 +1,6 @@
 body {
   background-color: #393e46;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 form {
 text-align: center;
@@ -37,6 +38,18 @@ aside button {
   width: 60%;
   
 }
+aside table{
+  background-color: #fff4e0;
+  padding: 5%;
+}
+aside table thead{
+  font-size: 150%;
+  font-weight: bold;
+}
+aside table tbody{
+  font-size: 140%;
+  padding-left: 1%;
+}
 section {
   width: 40%;
   display: inline-block;
@@ -47,6 +60,9 @@ footer {
   width: 100%;
   background-color: #00adb5;
   height: 10vh;
+  color: #fff4e0;
+  text-align: center;
+  padding-top: 2%
 }
 
 .form-heading {
@@ -130,7 +146,7 @@ footer {
   overflow-y: auto;
 }
 .card-footer {
-  
+  text-align: right;
 }
 .red-flag {
   color: #fc3c3c;
@@ -198,4 +214,7 @@ footer {
 }
 .hidden {
   display: none;
+}
+.wide{
+  width: 70%
 }
